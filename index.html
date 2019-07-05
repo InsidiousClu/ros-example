@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="id"></div>
+    <div id="renderer"></div>
 </body>
 
 <script src="http://static.robotwebtools.org/threejs/current/three.js"></script>
@@ -23,9 +23,9 @@
       url: 'ws://192.168.2.142:9090'
     });
     var viewer = new ROS3D.Viewer({
-      divID: 'id',
-      width: 400,
-      height: 400,
+      divID: 'renderer',
+      width: window.innerWidth,
+      height: window.innerHeight,
       antialias: true,
       cameraPose: { x: 5, y: 5, z: 5 },
     });
